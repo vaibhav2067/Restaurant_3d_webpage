@@ -1,0 +1,147 @@
+/* menu.css */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    height: 100vh;
+    overflow: hidden;
+  }
+  #bgCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #1a1a1a00;
+    /* backdrop-filter: blur(10px); */
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .sub-header {
+    /* padding: .4rem; */
+    padding-left: 2.4rem;
+    /* padding-bottom: 0rem; */
+    text-align: left;
+    font-size: 1rem;
+    color: white;
+    
+    /* backdrop-filter: blur(10px); */
+    /* border-bottom: 2px solid #eee; */
+  }
+  
+  .menu-container {
+    display: flex;
+    height: calc(100vh - 128px);
+    /* backdrop-filter: blur(10px); */
+  }
+  
+  .dish-list {
+    width: 20%;
+    /* background: #f9f9f9; */
+    margin: 1rem 1rem 4rem 1rem;
+    padding: 1rem;
+    overflow-y: auto;
+    /* border : 1px solid #ccc; */
+    border-radius: 20px;
+    scrollbar-width: none; /* Firefox */
+    backdrop-filter: blur(10px);
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  }
+
+  .dish-list::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
+
+  .dish-item {
+    margin-bottom: 1rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 10px;
+    color: #fff;
+    border-bottom: .8px solid #fff;
+
+  }
+  
+  .dish-item:hover {
+    background-color: #e0e0e0;
+    color: black;
+  }
+  
+  
+  .card-display {
+    width: 50%;
+    display: flex;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff00;
+    /* border-right: 1px solid #ccc; */
+    position: relative;
+  }
+
+  .card-display img,
+.card-display video {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 12px;
+}
+  
+  .dish-info {
+    width: 30%;
+    padding: 6rem 2rem 2rem 2rem ;
+    margin: 1rem 1rem 4rem 1rem;
+    /* background: #f4f4f4; */
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    /* justify-content: center; */
+  }
+  
+  .dish-info h3 {
+    margin-top: 0;
+  }
+  
+  button {
+    padding: 0.75rem 1.25rem;
+    margin-top: 1rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Page</title>
+  <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <canvas id="bgCanvas"></canvas>
+    <nav class="navbar">
+        <div class="logo">
+          <img src="./icons/TOPSIDE-TAVERN-NEW-LOGO-1024x498.png" alt="Topside Tavern Logo" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#">Menu</a></li>
+        </ul>
+      </nav>
+
+  <header class="sub-header">
+    <h2>MENU</h2>
+  </header>
+
+  <main class="menu-container">
+    <aside class="dish-list" id="dish-list">
+      <!-- List of dish names will go here -->
+    </aside>
+
+    <section class="card-display" id="card-display">
+      <!-- Image or Video of the current dish -->
+    </section>
+
+    <aside class="dish-info" id="dish-info">
+      <!-- Dish name, description, price, and Add to Plate button -->
+    </aside>
+  </main>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.155.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three/examples/js/loaders/GLTFLoader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.155.0/examples/js/loaders/RGBELoader.js"></script>
+  <script src="script.js"></script>
+  <script src="menu.js"></script>
+</body>
+</html>
